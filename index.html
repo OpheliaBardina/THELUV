@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta
+      name="description"
+      content="THE LUV FESTIVAL"
+    >
+
+    <link rel="apple-touch-icon" sizes="57x57" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="IMAGES/LUV.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <link rel="icon" type="image/png" href="IMAGES/LUV.png">
+    <meta name="application-name" content="LUV">
+    <meta property="og:title" content="THE LUV FESTIVAL">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="IMAGES/LUV.png">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="THE LUV FESTIVAL : FESTIVAL DE MUSIC NIEUPORT"> 
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="LUV">
+
+    <meta name="twitter:card" content="LUV">
+    <meta name="twitter:site" content="@LUV">
+    <meta name="twitter:title" content="THE LUV FESTIVAL">
+    <meta name="twitter:description" content="THE LUV FESTIVAL : FESTIVAL DE MUSIC NIEUPORT">
+    <meta name="twitter:image" content="IMAGES/LUV.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/style.css">
+    <title>The Luv Festival</title>
+</head>
+<body>
+    <div class="slide">
+    <header>
+        <div class="logo">
+            <a href="#home"><div>THE LUV <br>FESTIVAL</div></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#lineup">LINE-UP</a></li>
+                <li class="active"><a href="https://www.billetweb.fr/fr-fr/%22%3ETICKETS">TICKETS</a></li>
+                <li><a href="#informations">INFORMATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div id="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="responsivemenu">
+            <nav>
+                <ul>
+                    <li><a href="#lineup">LINE-UP</a></li>
+                    <li class="active"><a href="https://www.billetweb.fr/fr-fr/%22%3ETICKETS">TICKETS</a></li>
+                    <li class="link"><a href="#informations">INFORMATIONS</a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+        <script>
+                const burger = document.querySelector("#burger");
+    const responsivemenu = document.querySelector("#responsivemenu");
+    const linksresponsive = document.querySelectorAll('#responsivemenu nav ul li a');
+
+    // Event button burger
+    const toggleMenu = () => {
+    burger.classList.toggle('open-burger');
+    responsivemenu.classList.toggle('open-menu');
+    };
+    linksresponsive.forEach(link => {
+    burger.addEventListener('click', toggleMenu);
+    link.addEventListener('click', toggleMenu);
+    });
+        </script>
+
+        <div id="home">
+            <div class="rect">
+                <div class="text">   
+                    <div class="title">THE LUV <br>FESTIVAL</div>
+                    <p>-</p>        
+                    <div class="date">14-15-16</div>     
+                    <div class="date">AOUT 2023</div>     
+                    <p>-</p>    
+                    <div class="place">PLAGE DE NIEUPORT  
+                        <br>BELGIQUE</div>         
+                </div>
+            </div>          
+        </div>
+        <div id="footer">
+            <div class="foot">
+                    <div class="rs">
+                        <a href="#face">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                        </a>
+                        <a href="#insta">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="#tiktok">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                        </a>
+                    </div>
+            </div>
+        </div>
+   
+    <div class="messagedefilant">
+        <div data-text="THE LUV FESTIVAL">
+            <span>THE LUV FESTIVAL</span>
+        </div>
+    </div>
+
+        <div id="lineup">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>14 AOUT 2023</h3>
+                    <p>découvrez les artistes</p>
+                </div>
+                <div class="flip-card-back">
+                    <a href="jour1.html">HORAIRES</a>
+                    <h2><a href="artistes.html">-NEKFEU-</a></h2>
+                    <h3><a href="artistes.html">-LOMEPAL-</a></h3>
+                    <h3><a href="artistes.html">-DAMSO-</a></h3>
+                    <h3><a href="artistes.html">-ROMEO ELVIS-</a></h3>              
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>15 AOUT 2023</h3>
+                    <p>découvrez les artistes</p>
+                </div>
+                <div class="flip-card-back">
+                    <a href="jour1.html">HORAIRES</a>
+                    <h2><a href="artistes.html">-BAD BUNNY-</a></h2>
+                    <h3><a href="artistes.html">-GHALI-</a></h3>
+                    <h3><a href="artistes.html">-THE XX-</a></h3>
+                    <h3><a href="artistes.html">-MICHELE MORRONE-</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>16 AOUT 2023</h3>
+                    <p>découvrez les artistes</p>
+                    
+                </div>
+                <div class="flip-card-back">
+                    <a href="jour1.html">HORAIRES</a>
+                    <h2><a href="artistes.html">-LANA DEL REY-</a></h2>
+                    <h3><a href="artistes.html">-INDOCHINE-</a></h3>
+                    <h3><a href="artistes.html">-PLACEBO-</a></h3>
+                    <h3><a href="artistes.html">-MÂNESKIN-</a></h3>
+                   
+                </div>
+            </div>
+        </div>
+       
+    <script>
+     const flipCards = document.querySelectorAll('.flip-card');
+
+        flipCards.forEach((link) => {
+        link.addEventListener('click', () => {
+        link.classList.toggle('active');
+        });
+        });
+       
+
+       
+    </script>
+        </div>  
+    </div>
+
+    <div id="informations">
+        <div class="part">
+            <div class="left">
+                <img src="IMAGES/JOUR.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="texte">
+                    <h1>PASS UN JOUR</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+            <div class="left">
+                <div class="texte">
+                <h1>PASS FULL ACCESS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                <a href="">En savoir plus</a>
+                </div>
+            </div>
+            <div class="right">
+                    <img src="IMAGES/FULL.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="part">
+        <div class="left">
+            <img src="IMAGES/CAMPING.jpg" alt="">
+        </div>
+        <div class="right">
+            <div class="texte">
+                <h1>CAMPING</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                <a href="">En savoir plus</a>
+            </div>
+        </div>
+        <div class="left">
+            <div class="texte">
+                <h1>DRINKS & FOODS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                <a href="">En savoir plus</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="IMAGES/FOOD.jpg" alt="">
+        </div>
+    </div>
+    </div>
+        
+
+    <div id="inforesponsive">
+        <div class="img1">
+            <img src="IMAGES/JOUR.jpg" alt="">
+            <div class="block">
+                <div class="texte">
+                    <h1>PASS UN JOUR</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img src="IMAGES/FULL.jpg" alt="">
+            <div class="block">
+                <div class="texte">
+                    <h1>PASS FULL ACCESS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img src="IMAGES/CAMPING.jpg" alt="">
+            <div class="block">
+                <div class="texte">
+                    <h1>CAMPING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="img1">
+            <img src="IMAGES/FOOD.jpg" alt="">
+            <div class="block">
+                <div class="texte">
+                    <h1>DRINKS & FOODS</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quo! Eligendi, accusantium! Natus nesciunt officiis facilis quasi, vero quos eius dolor consequatur commodi repellendus dolores quibusdam ut dignissimos voluptatibus. Culpa?</p>
+                    <a href="">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tickets">
+        <div class="gauche">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40064.88133708982!2d2.7208977132702645!3d51.12589198163925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dcbb60ee3a08d1%3A0x40099ab2f4d5960!2sNieuport!5e0!3m2!1sfr!2sbe!4v1687260768308!5m2!1sfr!2sbe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="droite">
+            <form action="#" method="post">
+                <h1>Contactez-nous !</h1>
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+            
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+            
+                <label for="mail">Adresse email :</label>
+                <input type="email" id="mail" name="mail" placeholder="Entrez votre adresse email">
+            
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="msg" placeholder="Entrez votre message"></textarea>
+            
+                <input type="submit" value="Envoyer">
+              </form>
+    </div>
+    
+    <footer>
+        <div class="foot">
+            <div class="rs">
+                <div class="logors">
+                    <a href="#face">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                    </a>
+                    <a href="#insta">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="#tiktok">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+                    </a>
+                </div>
+                
+                <div class="copy">&copy; Ophélia Bardina</div>
+            </div>
+        </div>
+    </footer>
+    
+     
+
+    
+
+
+</body>
+
+</html>

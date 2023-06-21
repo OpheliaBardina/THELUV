@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/style.css">
+    <title>THE LUV FESTIVAL - JOUR 1</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><div>THE LUV <br>FESTIVAL</div></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#lineup">LINE-UP</a></li>
+                <li class="active"><a href="https://www.billetweb.fr/fr-fr/">TICKETS</a></li>
+                <li><a href="index.html#informations">INFORMATIONS</a></li>
+            </ul>
+        </nav>
+        <div id="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    
+        <div class="wrapper">
+            <div id="home2">
+                <div class="left">
+                    <div class="jour">
+                        <h1>14 AOUT 2023</h1>
+                        <a href="artistes.html" data-bandeau="romeoelvis"><h3>ROMEO ELVIS</h3>
+                        <h4>14H - 16H</h4></a>
+                        <a href="artistes.html" data-bandeau="damso"><h3>DAMSO</h3>
+                        <h4>16H30 - 18H30</h4></a>
+                        <a href="artistes.html" data-bandeau="lomepal"><h3>LOMEPAL</h3>
+                        <h4>19H - 21H</h4></a>
+                        <a href="artistes.html" data-bandeau="nekfeu"><h3>NEKFEU</h3>
+                        <h4>21H30 - 23H30</h4></a>
+                    </div> 
+                    
+                    
+                </div>
+                <div class="right">
+                    <div id="bandeaux">
+                        <div class="bandeau" data-bandeau="nekfeu">
+                            <img src="CHANTEURS/JOUR1/NEKFEU.jpg" alt="">
+                        </div>
+                        <div class="bandeau" data-bandeau="lomepal">
+                            <img src="CHANTEURS/JOUR1/LOMEPAL.jpg" alt="">
+                        </div>
+                        <div class="bandeau" data-bandeau="damso">
+                            <img src="CHANTEURS/JOUR1/DAMSO.jpg" alt="">
+                        </div>
+                        <div class="bandeau" data-bandeau="romeoelvis">
+                            <img src="CHANTEURS/JOUR1/ROMEOELVIS.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+            
+                const bandeaux = document.querySelectorAll(`.bandeau[data-bandeau]`)
+    
+                let index = 0
+                let last = null
+                document.querySelectorAll('.jour a').forEach(link=>{
+                    link.addEventListener('mouseover',()=>{
+                        const id = link.getAttribute('data-bandeau')
+                        // console.log(id)
+                        showBandeau(id)
+                    })
+                })
+    
+                const showBandeau = (id)=>{
+    
+                    // Permet de récupérer l'index d'une div (son numéro dans la liste)
+                    var nodes = Array.prototype.slice.call( document.getElementById('bandeaux').children );
+                    index = nodes.indexOf( document.querySelector(`.bandeau[data-bandeau="${id}"]`) )
+                    
+                    if(last){
+                        document.querySelector(`.jour a[data-bandeau="${last}"]`).classList.remove('active')
+                        document.querySelector(`.bandeau[data-bandeau="${last}"]`).classList.remove('active')
+                    }
+                    last = id
+                    document.querySelector(`.jour a[data-bandeau="${id}"]`).classList.add('active')
+                    document.querySelector(`.bandeau[data-bandeau="${id}"]`).classList.add('active')
+                }
+    
+                showBandeau(bandeaux[index].getAttribute('data-bandeau'))
+    
+    
+                let survol = false
+                const animeTime = ()=>{
+                    showBandeau(bandeaux[(index+1)%bandeaux.length].getAttribute('data-bandeau'))
+                }
+
+                let timer = setInterval(animeTime,2000)
+
+            document.querySelector('#bandeaux').addEventListener('mouseover',()=>{
+                clearInterval(timer)
+            })
+            document.querySelector('#bandeaux').addEventListener('mouseout',()=>{
+                timer = setInterval(animeTime,2000)
+            })
+            document.querySelector('.jour h3').addEventListener('mouseover',()=>{
+                clearInterval(timer)
+            })
+            document.querySelector('h3').addEventListener('mouseout',()=>{
+                timer = setInterval(animeTime,2000)
+            })
+    
+    
+            </script>
+        
+            
+        </div>
+
+        <footer>
+            <div class="foot">
+                <div class="rs">
+                    <div class="btnr"><a href="index.html#lineup">RETOUR</a></div>
+                </div>
+            </div>
+        </footer>
+    
+    
+    
+</body>
+</html>
