@@ -66,26 +66,12 @@
                 <ul>
                     <li><a href="#lineup">LINE-UP</a></li>
                     <li class="active"><a href="https://www.billetweb.fr/fr-fr/%22%3ETICKETS">TICKETS</a></li>
-                    <li class="link"><a href="#informations">INFORMATIONS</a></li>
+                    <li class="link"><a href="#inforesponsive">INFORMATIONS</a></li>
                  
                 </ul>
             </nav>
         </div>
-        <script>
-                const burger = document.querySelector("#burger");
-    const responsivemenu = document.querySelector("#responsivemenu");
-    const linksresponsive = document.querySelectorAll('#responsivemenu nav ul li a');
-
-    // Event button burger
-    const toggleMenu = () => {
-    burger.classList.toggle('open-burger');
-    responsivemenu.classList.toggle('open-menu');
-    };
-    linksresponsive.forEach(link => {
-    burger.addEventListener('click', toggleMenu);
-    link.addEventListener('click', toggleMenu);
-    });
-        </script>
+        
 
         <div id="home">
             <div class="rect">
@@ -171,18 +157,6 @@
             </div>
         </div>
        
-    <script>
-     const flipCards = document.querySelectorAll('.flip-card');
-
-        flipCards.forEach((link) => {
-        link.addEventListener('click', () => {
-        link.classList.toggle('active');
-        });
-        });
-       
-
-       
-    </script>
         </div>  
     </div>
 
@@ -321,7 +295,35 @@
         </div>
     </footer>
     
-     
+    <script>
+        //burger
+        const burger = document.querySelector("#burger");
+const responsivemenu = document.querySelector("#responsivemenu");
+const linksresponsive = document.querySelectorAll('#responsivemenu nav ul li a');
+
+const toggleMenu = () => {
+burger.classList.toggle('open-burger');
+responsivemenu.classList.toggle('open-menu');
+};
+linksresponsive.forEach(link => {
+burger.addEventListener('click', toggleMenu);
+link.addEventListener('click', toggleMenu);
+});
+</script>
+
+<script>
+    //cartes
+    const flipCards = document.querySelectorAll('.flip-card');
+
+       flipCards.forEach((link) => {
+       link.addEventListener('click', () => {
+       link.classList.toggle('active');
+       });
+       });
+      
+
+      
+   </script>
 
     
 

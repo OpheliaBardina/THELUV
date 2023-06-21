@@ -8,23 +8,34 @@
     <title>THE LUV FESTIVAL - PRESENTATION LOMEPAL</title>
 </head>
 <body>
-    <div class="header"><div class="logo">
-            <a href="index.html"><div>THE LUV <br>FESTIVAL</div></a>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html#home"><div>THE LUV <br>FESTIVAL</div></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html#lineup">LINE-UP</a></li>
-                <li class="active"><a href="https://www.billetweb.fr/fr-fr/">TICKETS</a></li>
+                <li class="active"><a href="https://www.billetweb.fr/fr-fr/%22%3ETICKETS">TICKETS</a></li>
                 <li><a href="index.html#informations">INFORMATIONS</a></li>
             </ul>
         </nav>
+    </div>
         <div id="burger">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-    </div>
-        
+        <div id="responsivemenu">
+            <nav>
+                <ul>
+                    <li><a href="index.html#lineup">LINE-UP</a></li>
+                    <li class="active"><a href="https://www.billetweb.fr/fr-fr/%22%3ETICKETS">TICKETS</a></li>
+                    <li class="link"><a href="index.html#inforesponsive">INFORMATIONS</a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+
 <div class="slide">
     <div class="wrapper">
 
@@ -58,7 +69,21 @@
     </div>
 </footer>
 
-    
+<script>
+    const burger = document.querySelector("#burger");
+const responsivemenu = document.querySelector("#responsivemenu");
+const linksresponsive = document.querySelectorAll('#responsivemenu nav ul li a');
+
+// Event button burger
+const toggleMenu = () => {
+burger.classList.toggle('open-burger');
+responsivemenu.classList.toggle('open-menu');
+};
+linksresponsive.forEach(link => {
+burger.addEventListener('click', toggleMenu);
+link.addEventListener('click', toggleMenu);
+});
+</script>    
     
 </body>
 </html>
