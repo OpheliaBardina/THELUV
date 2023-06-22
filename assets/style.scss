@@ -195,7 +195,7 @@ header{
 
 
 #home{
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     width: 100%;
     background-image: url(../IMAGES/HOME.jpeg);
     background-position: center;
@@ -796,6 +796,9 @@ header{
     background-color:$color3;
     display: flex;
     flex-wrap: wrap;
+    @media all and (max-width:1200px){
+        position: fixed;
+    }
     @media all and (max-height: 640px)
             {
                 height: 50px;
