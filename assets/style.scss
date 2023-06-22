@@ -936,7 +936,7 @@ header{
 
 
 
-
+//Jour1
     #home2{
         width: 100%;
         min-height: calc(100vh - 200px);
@@ -950,7 +950,7 @@ header{
         }
         .left{
             width: 50%;
-            height: calc(100vh - 200px);
+            min-height: calc(100vh - 200px);
             display: flex;
             flex-direction: column;
             justify-content: center;
