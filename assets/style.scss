@@ -964,7 +964,7 @@ header{
 
     #home2{
         width: 100%;
-        min-height: calc(100vh - 200px);
+        height: calc(100vh - 200px);
         background-color: #101010;
         display: flex;
         flex-wrap: wrap;
@@ -972,9 +972,9 @@ header{
         @media all and (max-width:1200px){
             flex-wrap: nowrap;
             flex-direction: column;
+            min-height: calc(100vh - 200px);
         }
         .left{
-            margin-top: 100px;
             width: 50%;
             min-height: calc(100vh - 200px);
             display: flex;
@@ -984,6 +984,7 @@ header{
             letter-spacing: 0.15em;
             @media all and (max-width:1200px){
                 width: 100%;
+                margin-top: 100px;
             }
             .jour{
 
@@ -1060,7 +1061,7 @@ header{
 
     #home3{
         width: 100%;
-        min-height: calc(100vh - 200px);
+        height: calc(100vh - 200px);
         background-color: $color3;
         display: flex;
         flex-wrap: wrap;
@@ -1068,9 +1069,9 @@ header{
         @media all and (max-width:1200px){
             flex-wrap: nowrap;
             flex-direction: column;
+            min-height: calc(100vh - 200px);
         }
         .left{
-            margin-top: 100px;
             width: 50%;
             min-height: calc(100vh - 200px);
             display: flex;
@@ -1080,6 +1081,7 @@ header{
             letter-spacing: 0.15em;
             @media all and (max-width:1200px){
                 width: 100%;
+                margin-top: 100px;
             }
             .rs{
                 margin-bottom: 30px;
