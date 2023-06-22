@@ -964,7 +964,7 @@ header{
 
     #home2{
         width: 100%;
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 200px);
         background-color: #101010;
         display: flex;
         flex-wrap: wrap;
@@ -972,11 +972,10 @@ header{
         @media all and (max-width:1200px){
             flex-wrap: nowrap;
             flex-direction: column;
-            min-height: calc(100vh - 200px);
         }
         .left{
             width: 50%;
-            min-height: calc(100vh - 200px);
+            height: calc(100vh - 200px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1061,7 +1060,7 @@ header{
 
     #home3{
         width: 100%;
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 200px);
         background-color: $color3;
         display: flex;
         flex-wrap: wrap;
@@ -1069,7 +1068,6 @@ header{
         @media all and (max-width:1200px){
             flex-wrap: nowrap;
             flex-direction: column;
-            min-height: calc(100vh - 200px);
         }
         .left{
             width: 50%;
