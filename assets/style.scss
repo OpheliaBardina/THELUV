@@ -32,10 +32,6 @@ header{
     background-color:$color3;
     display: flex;
     flex-wrap: wrap;
-    @media all and (max-height: 640px)
-            {
-                height: 50px;
-            }
     .logo{
         display: flex;
         justify-content: center;
@@ -53,10 +49,6 @@ header{
         @media all and (max-width: 600px){
             width: 50%;
         }
-        @media all and (max-height: 640px)
-            {
-                line-height: 23px;               
-            }
         a{
             text-decoration: none;
             color: $color2;
@@ -296,10 +288,6 @@ header{
     background-color: $color3;
     position: absolute;
     z-index: 10;
-    @media all and (max-height: 640px)
-            {
-                height: 50px;
-            }
     .foot{
         width: 20%;
         margin-left: 40%;
@@ -312,11 +300,6 @@ header{
             height: 100px;
             background-color: $color1;
             line-height: 100px;
-            @media all and (max-height: 640px)
-                {
-                        line-height: 50px;
-                        height: 50px;
-                }
             a{
                 fill: white;    
                 padding-left: 10px;     
@@ -799,10 +782,6 @@ header{
     @media all and (max-width:1200px){
         position: fixed;
     }
-    @media all and (max-height: 640px)
-            {
-                height: 50px;
-            }
     .logo{
         display: flex;
         justify-content: center;
@@ -820,10 +799,6 @@ header{
         @media all and (max-width: 600px){
             width: 50%;
         }
-        @media all and (max-height: 640px)
-            {
-                line-height: 23px;               
-            }
         a{
             text-decoration: none;
             color: $color2;
@@ -1138,10 +1113,6 @@ header{
                 width: 100%;
                 max-height: 100px;
                 background-color: $color3;
-                @media all and (max-height: 640px)
-                        {
-                            height: 50px;
-                        }
                 .foot{
                     width: 20%;
                     margin-left: 40%;
@@ -1157,11 +1128,6 @@ header{
                         justify-content: center;
                         height: 100px;
                         background-color: $color1;
-                        @media all and (max-height: 640px)
-                            {
-                                    line-height: 50px;
-                                    height: 50px;
-                            }
                         .copy{
                             margin-top: 10px;
                             font-family: $font2;
