@@ -1067,7 +1067,7 @@ header{
         }
         .left{
             width: 50%;
-            height: calc(100vh - 200px);
+            min-height: calc(100vh - 200px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1161,6 +1161,10 @@ header{
                             margin-top: 10px;
                             font-family: $font2;
                             color: white;
+                        }
+                        h6{
+                            color: white;
+                            font-family: $font2;
                         }
                         .btnr{
                             a{
