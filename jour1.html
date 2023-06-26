@@ -125,19 +125,16 @@
 
                 let timer = setInterval(animeTime,2000)
 
-            document.querySelector('#bandeaux').addEventListener('mouseover',()=>{
-                clearInterval(timer)
+           
+            document.querySelector('.jour a').addEventListener('mouseover',()=>{
+            clearInterval(timer)
             })
-            document.querySelector('#bandeaux').addEventListener('mouseout',()=>{
-                timer = setInterval(animeTime,2000)
-            })
-            document.querySelector('.jour h3').addEventListener('mouseover',()=>{
-                clearInterval(timer)
-            })
-            document.querySelector('h3').addEventListener('mouseout',()=>{
-                timer = setInterval(animeTime,2000)
-            })
+            
+            /*document.querySelector('.jour a').addEventListener('mouseout',()=>{
+                timer = setInterval(animeTime,3000)
+            })*/
     
+            
     
             </script>
         
