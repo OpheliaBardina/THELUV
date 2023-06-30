@@ -220,31 +220,44 @@ header{
                 font-size: 4vw;
                 @media all and (max-width : 900px)
                 {
-                    font-size: 4vh;
+                    font-size: 6vw;
                 }
-                @media all and (max-height: 900px)
+
+                @media all and (max-width : 500px)
                 {
                     font-size: 4vh;
+                }
+                @media all and (max-height: 500px)
+                {
+                    font-size: 3vh;
                 }
             }
             .date{
                 font-size: 3vw;
                 @media all and (max-width : 900px)
                 {
-                    font-size: 3vh;
+                    font-size: 4vw;
                 }
-                @media all and (max-height: 900px)
+                @media all and (max-width : 500px)
                 {
                     font-size: 3vh;
+                }
+                @media all and (max-height: 500px)
+                {
+                    font-size: 2vh;
                 }
             }
             .mois{
                 font-size: 2vw;
                 @media all and (max-width : 900px)
                 {
-                    font-size: 2vh;
+                    font-size: 4vw;
                 }
-                @media all and (max-height: 900px)
+                @media all and (max-width : 500px)
+                {
+                    font-size: 3vh;
+                }
+                @media all and (max-height: 500px)
                 {
                     font-size: 2vh;
                 }
@@ -254,9 +267,13 @@ header{
                 padding-bottom: 100px;
                 @media all and (max-width : 900px)
                 {
-                    font-size: 2vh;
+                    font-size: 3vw;
                 }
-                @media all and (max-height: 900px)
+                @media all and (max-width : 500px)
+                {
+                    font-size: 3vh;
+                }
+                @media all and (max-height: 500px)
                 {
                     font-size: 2vh;
                 }
@@ -265,11 +282,15 @@ header{
                 font-size: 2vw;
                 @media all and (max-width : 450px)
                 {
-                    font-size: 2vh;
+                    font-size: 3vw;
                 }
-                @media all and (max-height: 900px)
+                @media all and (max-width : 500px)
                 {
-                    font-size: 2vh;
+                    font-size: 3vh;
+                }
+                @media all and (max-height: 500px)
+                {
+                    font-size: 3vh;
                 }
             }
         }
@@ -527,7 +548,6 @@ header{
             }
             .texte{
                 width: 80%;
-                height: 50%;
                 margin: auto;
                 font-family: $font2;
                 h1{
@@ -541,6 +561,7 @@ header{
                     color: white;
                     font-size: 1em;
                     letter-spacing: 0.15em;
+                    line-height: 2em;
                 }
     
                 a{
@@ -552,12 +573,12 @@ header{
                     font-size: 1.2em;
                     display: block;
                     padding: 10px;
-                    border: solid 1px $color3;
+                    border: solid 1px $color1;
                 }
                 a:hover{
-                    color: $color1;
+                    color: $color2;
                     padding: 10px;
-                    border: solid 1px $color1;
+                    border: solid 1px $color2;
                 }
             }
         }
@@ -576,7 +597,6 @@ header{
             }
             .texte{
                 width: 80%;
-                height: 50%;
                 margin: auto;
                 font-family: $font2;
                 h1{
@@ -590,6 +610,7 @@ header{
                     font-size: 1em;
                     padding-bottom: 20px;
                     letter-spacing: 0.15em;
+                    line-height: 2em;
     
                 }
     
@@ -602,12 +623,12 @@ header{
                     font-size: 1.2em;
                     display: block;
                     padding: 10px;
-                    border: solid 1px $color3;
+                    border: solid 1px $color1;
                 }
                 a:hover{
-                    color: $color1;
+                    color: $color2;
                     padding: 10px;
-                    border: solid 1px $color1;
+                    border: solid 1px $color2;
                 }
             }
         }
@@ -650,8 +671,7 @@ header{
             width: 80%;
             margin-left: 10%;
             h1{
-                padding-top: 20px;
-                padding-bottom: 20px;
+                margin: 20px;
                 text-align: center;
                 color: $color2;
                 font-size: 2em;
@@ -659,6 +679,7 @@ header{
             p{
                 color: white;
                 font-size: 1.2em;
+                line-height: 1.2em;
             }
             a{
                 display: block;
@@ -666,11 +687,13 @@ header{
                 text-decoration: none;
                 color: $color1;
                 font-size: 1.4em;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                margin-top:20px;
+                padding: 10px;
+                border: solid 1px $color1;
             }
             a:hover{
                 color: $color2;
+                border: solid 1px $color2;
             }
         }
     }
@@ -694,7 +717,6 @@ header{
         justify-content: center;
         text-align: center;
         @media all and (max-width:1200px){
-            margin-top: 50px;
             max-height: 100vh;
             width: 100%;
         }
